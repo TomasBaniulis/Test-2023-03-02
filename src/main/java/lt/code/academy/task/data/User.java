@@ -12,6 +12,13 @@ public class User {
 
     public User() {}
 
+    public User(String name, String surname, String userName, Account account) {
+        this.name = name;
+        this.surname = surname;
+        this.userName = userName;
+        this.account = account;
+    }
+
     public User(String id, String name, String surname, String userName, Account account) {
         this.id = id;
         this.name = name;
