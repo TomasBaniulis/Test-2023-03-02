@@ -20,6 +20,7 @@ public class Menu {
         do {
             showLoginMenu();
              action = scanner.nextLine();
+             loginMenuAction(action);
         }while (!action.equals("3"));
     }
 
