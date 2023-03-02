@@ -26,7 +26,7 @@ public class Menu {
     void loginMenuAction (String action){
         switch (action){
             case "1" -> logUser();
-            case "2" -> System.out.println("please register") ;
+            case "2" -> userRegistration();
             case "3" -> System.out.println("exit");
             default -> System.out.println("no such action");
         }
