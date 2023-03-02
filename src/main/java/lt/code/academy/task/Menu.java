@@ -73,7 +73,24 @@ public class Menu {
         dbServise.makeTransfer(sum, receiverName);
     }
 
-    private void userRegistration
+    private void userRegistration (){
+        System.out.println("Enter your name");
+        String name = scanner.nextLine();
+        System.out.println("enter your name");
+        String surname = scanner.nextLine();
+        System.out.println("enter your username");
+        String username = scanner.nextLine();
+        System.out.println("enter your account id");
+        String id = scanner.nextLine();
+        System.out.println("enter account number");
+        String accountNumber = scanner.nextLine();
+        System.out.println("enter bank name");
+        String bank = scanner.nextLine();
+        System.out.println("enter your balance");
+        Double balance = Double.parseDouble(scanner.nextLine());
+        Account account = new Account(id, accountNumber, bank, balance);
+        dbServise.insertUser(name, surname, username, account);
+    }
 
 
 
