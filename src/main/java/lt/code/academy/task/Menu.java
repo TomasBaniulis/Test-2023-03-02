@@ -37,8 +37,7 @@ public class Menu {
         System.out.println("Enter your userName");
         String userName = scanner.nextLine();
         User user = dbServise.getUser(userName);
-
-
+        userMenu();
     }
 
     void printUserMenu (){

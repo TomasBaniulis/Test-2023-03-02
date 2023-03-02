@@ -84,6 +84,7 @@ public class DataBaseServise {
     void insertUser ( String name, String surname, String username, Account account){
         User newUser = new User(null, name, surname,username, account );
         usersCollection.insertOne(user);
+        System.out.println("You have successfully registered to the system");
     }
 
 
