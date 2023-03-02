@@ -15,7 +15,6 @@ public class Menu {
                 2. create user
                 3. exit 
                 """);
-
     }
 
     void loginMenu (){

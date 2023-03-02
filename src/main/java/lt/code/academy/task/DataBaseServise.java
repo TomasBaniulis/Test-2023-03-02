@@ -87,7 +87,4 @@ public class DataBaseServise {
         System.out.println("You have successfully registered to the system");
     }
 
-
-
-
 }
