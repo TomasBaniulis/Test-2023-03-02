@@ -1,5 +1,8 @@
 package lt.code.academy.task;
 
+import lt.code.academy.task.data.Account;
+import lt.code.academy.task.data.User;
+
 import java.util.Scanner;
 
 public class Menu {
@@ -77,7 +80,7 @@ public class Menu {
     private void userRegistration (){
         System.out.println("Enter your name");
         String name = scanner.nextLine();
-        System.out.println("enter your name");
+        System.out.println("enter your surname");
         String surname = scanner.nextLine();
         System.out.println("enter your username");
         String username = scanner.nextLine();
@@ -92,10 +95,5 @@ public class Menu {
         Account account = new Account(id, accountNumber, bank, balance);
         dbServise.insertUser(name, surname, username, account);
     }
-
-
-
-
-
 
 }

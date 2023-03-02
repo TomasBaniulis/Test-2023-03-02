@@ -1,4 +1,6 @@
-package lt.code.academy.task;
+package lt.code.academy.task.data;
+
+import lt.code.academy.task.data.Account;
 
 public class User {
 

@@ -1,12 +1,12 @@
 package lt.code.academy.task;
 
-import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
 import com.mongodb.client.model.Updates;
-import org.bson.Document;
+import lt.code.academy.task.data.Account;
+import lt.code.academy.task.data.User;
 import org.bson.types.ObjectId;
 
 public class DataBaseServise {

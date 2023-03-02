@@ -1,4 +1,4 @@
-package lt.code.academy.task;
+package lt.code.academy.task.data;
 
 public class Account {
 
