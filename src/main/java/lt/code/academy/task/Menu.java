@@ -37,6 +37,7 @@ public class Menu {
         String userName = scanner.nextLine();
         User user = dbServise.getUser(userName);
 
+
     }
 
     void printUserMenu (){
@@ -57,12 +58,22 @@ public class Menu {
 
     private void userMenuAction (String action){
         switch (action) {
-            case "1" -> dbServise.getUserBalance();
-            case "2" -> System.out.println("transfer money");
+            case "1" -> dbServise.printUserBalance();
+            case "2" -> makeUserTransfer();
             case "3" -> System.out.println("exit");
             default -> System.out.println("no such action");
         }
     }
+
+    private void makeUserTransfer (){
+        System.out.println("Enter sum you want to transfer");
+        double sum = scanner.nextDouble();
+        System.out.println("enter receiver name");
+        String receiverName = scanner.nextLine();
+        dbServise.makeTransfer(sum, receiverName);
+    }
+
+    private void userRegistration
 
 
 
