@@ -70,7 +70,7 @@ public class Menu {
 
     private void makeUserTransfer (){
         System.out.println("Enter sum you want to transfer");
-        double sum = scanner.nextDouble();
+        double sum = Double.parseDouble(scanner.nextLine());
         System.out.println("enter receiver name");
         String receiverName = scanner.nextLine();
         dbServise.makeTransfer(sum, receiverName);
@@ -94,5 +94,4 @@ public class Menu {
         Account account = new Account(id, accountNumber, bank, balance);
         dbServise.insertUser(name, surname, username, account);
     }
-
 }
