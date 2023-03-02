@@ -54,6 +54,7 @@ public class Menu {
         do {
             showLoginMenu();
             action = scanner.nextLine();
+            userMenuAction(action);
         }while (!action.equals("3"));
     }
 
